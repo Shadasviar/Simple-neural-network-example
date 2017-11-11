@@ -84,19 +84,8 @@ void KohonenNet::study(Neuron &n, QImage pic)
 
     for(uint i(0); i < data.size(); ++i){
         inNeurons.at(i)->value = data.at(i);
-        float tmp = n.dendrits[i].inputAkson->getSignal();
-        if(tmp > 0.5){
-            int a;
-            a = 2;
-        }
     }
-
-    float res = n.akson.getSignal();
     n.value = n.akson.getSignal();
-    float z = 1.;
-    float d = z - res;
-
-
 }
 
 
