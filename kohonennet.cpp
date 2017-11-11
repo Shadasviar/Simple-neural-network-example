@@ -26,18 +26,6 @@ KohonenNet::KohonenNet():inNeurons(),outNeurons(5)
         QImage pic(names[i]);
         study(outNeurons.at(i), pic);
     }
-    /*
-    for(uint i(0) ; i < numNumbers; ++i){
-        QImage pic("b"+names[i]);
-        study(outNeurons.at(i), pic);
-    }
-
-    for(
-        uint i(0) ; i < numNumbers; ++i){
-        QImage pic("c"+names[i]);
-        study(outNeurons.at(i), pic);
-    }*/
-
 
 }
 
